@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environment+3D model</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+</head>
+<body>
+    <a-scene physics="gravity: -9.8">
+        <!--Creamos nuestra biblioteca de assets-->
+        <a-assets>
+          <img id="modern_buildings_night" src="hansaplatz_4k.png">
+          <audio id="musica" src="ambiente.mp3" preload="auto"></audio>
+          <a-asset-item id="apartamento-o" src="./assets/casa11.obj"></a-asset-item>
+          <a-asset-item id="apartamento-m" src="./assets/casa11.mtl"></a-asset-item>
+          <a-asset-item id="tv-o" src="./assets/3d-model.obj"></a-asset-item>
+          <a-asset-item id="tv-m" src="./assets/3d-model.mtl"></a-asset-item>
+          <a-asset-item id="sof" src="./assets/sof/scene.gltf"></a-asset-item>
+          <a-asset-item id="cocina" src="./assets/cocina/scene.gltf"></a-asset-item>
+          <a-asset-item id="Chairs-p" src="./assets/Chairs/armchair_.obj"></a-asset-item>
+          <a-asset-item id="Chairs-x" src="./assets/Chairs/armchair_.mtl"></a-asset-item>
+          <a-asset-item id="silla-g" src="./assets/sillas/scene.gltf"></a-asset-item>
+          <a-asset-item id="CG" src="./assets/CamaGaming/scene.gltf"></a-asset-item>
+          <a-asset-item id="CG" src="./assets/MesaGamer/scene.gltf"></a-asset-item>
+          <a-asset-item id="CG1" src="./assets/MesaTv/scene.gltf"></a-asset-item>
+          <a-asset-item id="closet" src="./assets/closet/scene.gltf"></a-asset-item>
+          <a-asset-item id="armchair" src="./assets/armchair/scene.gltf"></a-asset-item>
+          <a-asset-item id="bathroom" src="./assets/bathroom/scene.gltf"></a-asset-item>
+        </a-assets>
+        <a-entity obj-model="obj: #apartamento-o; mtl: #apartamento-m" position="-10 0 8"></a-entity>
+        <a-entity gltf-model="#sof" scale="2.3 2.3 2.3" position="4 0.5 -5"></a-entity>
+        <a-entity gltf-model="#cocina" scale="1 1 1" position="0 0 5.5" rotation="0 90 0"></a-entity>
+        <a-entity obj-model="obj: ./assets/3d-model.obj; mtl: ./assets/3d-model.mtl" position="2.81224 0.93271 0.66525" scale="0.07 0.07 0.07" rotation="0 180 0"></a-entity>
+        <a-entity obj-model="obj: #Chairs-p; mtl: #mtlchairs-x"  position="0 1 0" scale="0.01 0.01 0.01" rotation="0 180 0"></a-entity>
+        <a-entity gltf-model="./assets/sillas/scene.gltf" scale="0.00284 0.00284 0.00284" position="1.92293 -0.07806 -1.26682" rotation="0 1.5521426670094 0"></a-entity>
+        <a-entity gltf-model="./assets/CamaGaming/scene.gltf" scale="0.01233 0.01233 0.01233" position="-7.81821 3.44046 -4.49801" rotation="0 94.07336742473474 0"></a-entity>
+        <a-entity gltf-model="./assets/MesaGamer/scene.gltf" scale="0.13232 0.13232 0.13232" position="-7.81355 3.93858 2.48274" rotation="1.193471087257505 90.89115983057813 -0.23605861159389918"></a-entity>
+        <a-entity gltf-model="./assets/MesaTv/scene.gltf" scale="0.01699 0.01881 0.01881" position="2.43847 -0.3222 0.76038" rotation="0.33632622574179327 176.03727184937952 1.1694068598620102"></a-entity>
+        <a-entity gltf-model="#closet" scale="0.0015 0.0015 0.0015" position="-9.236 3.448 -1.488" rotation="-180.000 -90.000 -180"></a-entity>
+        <a-entity gltf-model="#armchair" scale="0.002 0.002 0.002" position="6.085 0.004 -1.867" rotation="0.000 -51.7250.000"></a-entity>
+        <a-entity gltf-model="#bathroom" scale="1.3 1.3 1.3" position="-7.932 0.020 -4.146" rotation="0 0 -0.329" ></a-entity>
+
+        
+        <!--Importamos a la escena el modelo 3D-->
+        <a-sky src="#modern_buildings_night" rotation="0 0 0" ></a-sky>
+        
+        <a-entity id="rig" movement-controls kinematic-body>
+            <a-entity camera sound="src: #musica; autoplay: true; volume:0.3; loop:true" position="0 1.8 0" look-controls="pointerLockEnabled: true"></a-entity>
+        </a-entity>
+
+ 
+        <a-plane static-body position="0 -0.5 0" height="12" width="21" rotation="-90 0 0" opacity="0.0"></a-plane>
+        <a-plane static-body position="-12 3.3 0" height="12" width="21" rotation="90 0 0" opacity="0.0"></a-plane>
+        <a-plane static-body position="0 4 -7" height="12" width="21" rotation="0 0 0" opacity="0.0"></a-plane>
+        <a-plane static-body position="0 4 6" height="12" width="21" rotation="0 0 0" opacity="0.0"></a-plane>
+        <a-plane static-body position="-10 4 0" height="12" width="12" rotation="0 90 90" opacity="0.0"></a-plane>
+        <a-plane static-body position="11.5 4 0" height="12" width="12" rotation="180 90 90" opacity="0.0"></a-plane>
+        <a-plane static-body position="3.5 0 5" height="3" width="12" rotation="-58 90 90" opacity="0.0"></a-plane>
+        <a-plane static-body position="2.552 0.552 0.557" height="1" width="11" scale="0.2 1 1" rotation="-180 0 -180" roughness="100" opacity="0.0"></a-plane>
+        <a-plane static-body position="1.928 0.434 -1.046" scale="0.163 1 1"  opacity="0.0"></a-plane>
+        <a-plane static-body position="-1.202 4.145 -1.439" rotation="180 -90 180" scale="8.720 2 1" opacity="0.0"></a-plane>
+        <a-plane static-body position="-6.203 0.895 -3.278" rotation="0 -90.000 0" scale="4.759 1.320 1.000" opacity="0.0"></a-plane>
+        <a-plane static-body position="0.291 0.850 3.280" rotation="0.000  -180.000 33" scale="5.422 4.745 1" opacity="0.0"></a-plane>
+        <a-plane static-body position="-6.389 5.531 -0.238" scale="5.357 3.728 1" opacity="0.0"></a-plane>
+        <a-plane static-body position="-3.651 1.424 3.333" rotation="-180.000 0.000 -180.000" scale="5.211 3.141 1.000" opacity="0.0"></a-plane>
+        <a-plane static-body position="-5.958 1.134 4.414" rotation="0 -90.000 0" scale="1.000 1.781 1.010" opacity="0.0"></a-plane>
+        <a-box static-body position="3.970 0.241 -5.356" scale="4.034 0.358 0.464" opacity="0.0"></a-box>
+        <a-box static-body position="-3.346 0.424 -3.627" scale="2.541 1.500 0.201" opacity="0.0"></a-box>
+        <a-box static-body position="-3.346 0.424 -6.042" scale="2.541 1.500 0.201" opacity="0.0"></a-box>
+        <a-box static-body position="-5.741 3.940 -3.426" scale="1.981 0.216 1.000" opacity="0.0"></a-box>
+        <a-box static-body position="-8.263 4.048 2.643" scale="0.720 1.000 3.413" opacity="0.0"></a-box>
+        <a-box static-body="sphereRadius: NaN" position="-9.27193 4.35275 -1.48426" scale="0.05165 1.77571 1.54369" opacity="0.0"></a-box>
+        <a-plane static-body position="6.152 0.000 -2.060" scale="0.074 1.000 1.000" opacity="0.0"></a-plane>
+
+    </a-scene>
+</body>
+</html>
