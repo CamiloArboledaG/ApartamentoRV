@@ -1,38 +1,38 @@
 # ApartamentosRV
 
-Proyecto guiado para el sector de venta de casas y apartamentos para las personas de estrato 6, esta experiencia cuenta con una vista de realidad virtual en la que el espectador puede explorar uno de los apartamentos que se encuentra en oferta, el proyecto está montado con a-frame y los modelos están realizados en sketchup, el modelo cuenta con un amueblado y con una cercanía con la realidad muy favorable
+Guided project for the sector of sale of houses and apartments for people of stratum 6, this experience has a virtual reality view in which the viewer can explore one of the apartments that is on offer, the project is mounted with a-frame and the models are made in sketchup, the model has a furnished and close to the very favorable reality
 
-## Comenzando 🚀
+## Commencing 🚀
 
-_Para poder ver el proyecto se recomienda tener un repositorio local y hacer la siguiente linea de código_
+_In order to view the project it is recommended to have a local repository and make the following line of code_
 
 git clone https://github.com/jairov92/ApartamentosRV.git
 
 
-### Pre-requisitos 📋
+### Prerequisites 📋
 
-_Antes de usar el aplicativo asegúrate que en tu navegador puedas correr una extensión llamada live server o si tienes alguna similar, adicional a esto que el navegador tenga habilitado la función de sonido ya que el proyecto cuenta con música de ambiente_
+_Before using the app make sure that in your browser you can run an extension called live server or if you have one similar, in addition to this that the browser has the sound function enabled since the project has ambient music_
 
 ```
-Abre con live server y explora la realidad virtual con A-frame
+Open with live server and explore virtual reality with A-frame
 ```
 
-### Proceso de creación  🔧
+### Creation process  🔧
 
-Comenzamos con el desarrollo del modelado, lo primero que tenemos que tener en cuenta es la imagen de referencia que fue asignada para la creación de este
+We start with the development of modeling, the first thing we have to take into account is the reference image that was assigned for the creation of this
 
 ![apartamento](https://user-images.githubusercontent.com/79010465/110733854-aed30380-81f4-11eb-99fe-090f5cf43e06.PNG)
 
-Con esto en mente se comenzó con la creación del apartamento dándonos un modelo bastante bueno y que se veía bien para comenzar
+With this in mind we started with the creation of the apartment giving us a pretty good model and it looked good to start
 
 ![Captura](https://user-images.githubusercontent.com/79010465/111014076-24afaa00-8370-11eb-89de-6d2136c59bb3.PNG)
 
 
 ```
-El modelado del apartamento se realizó en sketchUp
+Apartment modeling was done in sketchUp
 ```
 
-Se comienza con el desarrollo del apartamento y se asigna unas dimensiones que se ven en la imagen, luego de esto pegamos texturas y vemos en a-frame que tal se ve
+It starts with the development of the apartment and assigns some dimensions that you see in the image, after this we paste textures and see in a-frame that looks
 
 
 
@@ -43,7 +43,7 @@ Se comienza con el desarrollo del apartamento y se asigna unas dimensiones que s
 ![Captura3](https://user-images.githubusercontent.com/79010465/111014606-7e18d880-8372-11eb-97d3-a0b123ec1605.PNG)
 
 
-Para darle más realismo se colocó un skymap de la pagina https://hdrihaven.com/ al rededor del apartamento que es el siguiente 
+To give it more realism was placed a skymap of the https://hdrihaven.com/ around the apartment which is next
 
 
 ![hansaplatz_4k-min](https://user-images.githubusercontent.com/79010465/111016186-67767f80-837a-11eb-94ef-ce1f6960e3a8.png)
@@ -53,14 +53,14 @@ Para darle más realismo se colocó un skymap de la pagina https://hdrihaven.com
 https://hdrihaven.com/hdri/?c=night&h=hansaplatz
 ```
 
-Luego de esto hacemos 2 pasos que son colocarle colisiones
+After this we do 2 steps that are to place collisions
 
 
 
 ![51iqf8](https://user-images.githubusercontent.com/79010465/111014809-84f41b00-8373-11eb-90b5-0e377c79f367.gif)
 
 
-Colocarle objetos 3d bajados de manera gratuita de internet en la página https://sketchfab.com/feed donde encontramos modelos en obj y gtlf
+Place 3d objects downloaded for free from the internet on the https://sketchfab.com/feed where we find models in obj and gtlf
 
 
 ![Captura](https://user-images.githubusercontent.com/79010465/111035459-b0fdb380-83e8-11eb-9b67-2419b0a3e18a.PNG)
@@ -81,27 +81,27 @@ Colocarle objetos 3d bajados de manera gratuita de internet en la página https:
 
 
 
-notamos que los colores tenian ciertos fallos entonces se decidio por cambiar el color del piso y paredes para darle un tono mas oscuro y que las texturas cargaran mejor
+we noticed that the colors had certain flaws so it was decided to change the color of the floor and walls to give it a darker tone and that the textures loaded better
 
 
 
 ![Captura8](https://user-images.githubusercontent.com/79010465/111015774-72c8ab80-8378-11eb-9c1b-5fa09ec27cfd.PNG)
 
-Para finalizar el reporte se realizo las respectivas colisiones de todos los objetos que hay en el apartamento quedando de la siguiente manera
+To finish the report, the respective collisions of all the objects in the apartment were made as follows
 
 
 
 ![51j5s5](https://user-images.githubusercontent.com/79010465/111019069-ea073b00-838a-11eb-9179-0939b77cd95c.gif)
 
 ```
-Las colisiones como las de las paredes se hicieron con planos y algunos otros con cajas
+Collisions like those on the walls were made with plans and some others with boxes
 ```
 
 
 
 
 ## Información adicional  🤓
-Adicionalmente se creó dentro del proyecto una carpeta nueva llamada AR, que en esta contiene la misma información y archivos de objetos que la de la experiencia original, pero con la excepción de que el index está programado para mostrarnos el apartamento desde el techo con la perspectiva de Realidad Aumentada como se ve acontinuación
+In addition, a new folder called AR was created within the project, which in it contains the same information and object files as that of the original experience, but with the exception that the index is programmed to show us the apartment from the ceiling with the perspective of Augmented Reality as seen incontinuation
 
 
 
@@ -118,25 +118,14 @@ Adicionalmente se creó dentro del proyecto una carpeta nueva llamada AR, que en
 
 
 
-  
-## Conclusiones Jairo ⚙️
 
-_Como grupo estuvimos en etapas de investigación para resolver el entorno virtual del apartamento, decidimos usar ciertos cálculos para posicionar los objetos de manera ordenada. Encontramos buenas texturas de alta definición en algunos modelos dándole cierto realismo al apartamento encontramos errores y soluciones como grupo_
-
-## Conclusiones Juan Camilo 📢
-
-_Este trabajo se hizo de manera colectiva y estuvo bastante buena la manera de trabajar a través de GitHub, fue una experiencia gratificante y que en futuros trabajos se tiene que tener en cuenta, adicional a lo anterior debo decir que mi equipo de trabajo fue muy bueno y agradezco su tiempo y dedicación a pesar de que mi computador me presento muchas fallas al inicio_
-
-## Conclusiones Danny Alejandro ☕ 
-
-_Para este proyecto se aprendieron conceptos de realidad virtual para la web además de entender los beneficios y posibilidades de utilizar esta técnica_
 
 ## Construido por 🛠️
 
 
-* jairo vergara portocarrero 2151714
-* Juan Camilo Arboleda Garcia 2181056
-* Danny Alejandro Martínez Duque 2185738
+* jairo vergara portocarrero 
+* Juan Camilo Arboleda Garcia 
+* Danny Alejandro Martínez Duque 
 
 
 ## Información de importancia 🎁
@@ -149,4 +138,4 @@ _Para este proyecto se aprendieron conceptos de realidad virtual para la web ade
 
 
 ---
-⌨️ con ❤️ por el GRUPO 6 😊
+⌨️ con ❤️ 
