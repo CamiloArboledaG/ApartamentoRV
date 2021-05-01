@@ -109,7 +109,7 @@ In addition, a new folder called AR was created within the project, which in it 
 
 
 ```
-  Para este proyecto de RA se usó AR.js y A-frame
+Ar.js and A-frame were used for this RA project
 ```
 
 
@@ -120,7 +120,7 @@ In addition, a new folder called AR was created within the project, which in it 
 
 
 
-## Construido por 🛠️
+## Built by 🛠️
 
 
 * jairo vergara portocarrero 
@@ -128,14 +128,13 @@ In addition, a new folder called AR was created within the project, which in it 
 * Danny Alejandro Martínez Duque 
 
 
-## Información de importancia 🎁
+## Important information 🎁
 
-* Este proyecto fue realizado para la materia de Realidad virtual de la Universidad Autonoma de Occidente 📢
-* Profesor: Cesar Martinez Uribe 🍺  
-* Gracias por la comprensión y los comentarios del proyecto 🤓.
-
+* This project was carried out for the virtual reality subject of autonoma University of the West 📢 
+* * Professor: Cesar Martinez Uribe 🍺 
+* * Thank you for the understanding and comments of the 🤓.
 
 
 
 ---
-⌨️ con ❤️ 
+⌨️ with ❤️ 
