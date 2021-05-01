@@ -100,7 +100,7 @@ Collisions like those on the walls were made with plans and some others with box
 
 
 
-## Información adicional  🤓
+## additional information  🤓
 In addition, a new folder called AR was created within the project, which in it contains the same information and object files as that of the original experience, but with the exception that the index is programmed to show us the apartment from the ceiling with the perspective of Augmented Reality as seen incontinuation
 
 
